@@ -1,78 +1,204 @@
-body {
-  background: linear-gradient(180deg, #374151 0%, #111827 100%);
-  width: 100vw;
-  font-family: "Robot", sans-serif;
-  text-align: center;
-  color: #fff;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-ul {
-  list-style: none;
-}
-.search {
-  border: none;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border-radius: 100px;
-  background: rgba(31, 41, 55, 0.6);
-  padding: 9px 128px 12px 49px;
-  opacity: 0.6;
+  color: #fff;
+}
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
 }
 
-a {
+.head_header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logo_wrapper {
+  margin-top: 78px;
+  margin-left: 192px;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  background: #4b5563;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+}
+.logo_wrapper img {
+  position: absolute;
+  top: 83px;
+  left: 443px;
+}
+.left_wrapper {
+  display: flex;
+  gap: 11px;
+}
+
+.left_wrapper a {
   text-decoration: none;
-  color: #fff;
+  font-size: 18px;
+  margin-right: 77px;
+  margin-top: 80px;
+}
+.navigation {
+  display: flex;
+  flex-grow: 2;
+  margin-top: 81px;
+  margin-bottom: 80px;
+}
+.menu_nav {
+  list-style: none;
+  display: flex;
+  flex-grow: 2;
+  gap: 39px;
+}
+.item1,
+.item2,
+.item3 {
+  text-decoration: none;
+}
+.item1 {
+  margin-right: 12px;
+}
+.right_wrapper {
+  margin-top: 71px;
+  margin-right: 180px;
+}
+.search {
+  width: 224px;
+  height: 40px;
+  border-radius: 100px;
+  background: rgba(31, 41, 55, 0.6);
+  border: none;
+  padding: 9px 0 12px 49px;
+}
+
+.form_input img {
+  position: absolute;
+  right: 613px;
+  top: 83px;
+}
+
+.main_page {
+  max-width: 821px;
+  width: 100%;
+  margin: 0 auto;
+}
+.time {
+  font-size: 14 px;
+  opacity: 0.6;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.hero_title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo_author {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.img_wrapper {
+  margin-bottom: 69px;
+}
+
+.text_1 {
+  font-size: 20px;
+
+  line-height: 32px;
+}
+
+.text_2,
+.text_3 {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 30px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+.author {
+  margin-right: 16px;
 }
 .profesion {
   opacity: 0.6;
-}
-.hero_text img {
-  margin-bottom: 69px;
-  justify-content: center;
-}
-
-.hero_text {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  padding: 69px 365px 0px 367px;
-  text-align: justify;
-}
-
-.time {
-  margin-top: 69px;
-  margin-bottom: 14px;
   font-size: 14px;
+}
+.name_author {
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.author {
+  margin-right: 16px;
+}
+
+.profesion {
   opacity: 0.6;
-  font-weight: 400;
+  font-size: 14px;
 }
 
-.text {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+.name_author {
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.text + p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+.text_wrapper {
+  /* margin: 0 auto; */
+  /* width: 781px; */
+  margin: 0 auto;
+  display: flex;
+  width: 7;
+  width: 781px;
+  padding-left: 94px;
+  padding-right: 94px;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 90px;
 }
 
 footer {
-  opacity: 0.6;
+  text-align: center;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  margin-top: 103px;
+  opacity: 0.6;
+  margin-bottom: 77px;
+}
+
+.time {
+  letter-spacing: 0;
+}
+
+.hero_title {
+  width: 554px;
+}
+
+body > footer:nth-child(3) > p:nth-child(1) {
+  font-size: 16px;
+  opacity: 0, 6;
 }
