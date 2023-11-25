@@ -3,58 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Мой блог</title>
   </head>
 
   <body>
-    <header>
-      <nav>
-        <div>B</div>
-        <ul>
-          <li><a href="#">Мой блог</a></li>
-          <li><a href="#">HTML и CSS</a></li>
-          <li><a href="#">Frontend</a></li>
-          <li><a href="#">Backend</a></li>
+    <header class="head_header">
+      <div class="left_wrapper">
+        <div class="logo_wrapper">
+          <img src="B.svg" width="11px" height="23px" alt="Логотип" />
+        </div>
+        <a href="#" class="my_blog">Мой блог</a>
+      </div>
+      <nav class="navigation">
+        <ul class="menu_nav">
+          <li class="items1"><a class="item1" href="#">HTML и CSS</a></li>
+          <li class="items2"><a class="item2" href="#">Frontend</a></li>
+          <li class="items3"><a class="item3" href="#">Backend</a></li>
         </ul>
-        <input type="text" placeholder="Поиск" />
       </nav>
+      <div class="right_wrapper">
+        <form action="" class="form_input">
+          <input class="search" type="text" placeholder="Поиск" />
+          <img
+            src="search.svg"
+            width="14px"
+            height="14px"
+            alt="Значек поиска"
+          />
+        </form>
+      </div>
     </header>
-    <article>
-      <div><span>FRONTEND</span> <time>&bull; 12 мая 2024</time></div>
-      <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
-      <section>
-        <img src="img.png" alt="photo_author" />
-        <span>Наталья Васильева</span>
-        <span>Разработчик</span>
-      </section>
-      <section>
-        <img src="img2.png" alt="foto_mac" />
-        <p>
-          Теория цвета — это особенности эмоционального восприятия человеком тех
-          или иных цветовых решений. Цвета и различные их комбинации влияют на
-          психику человека, а значит, во многом определяют его поведение.
-          Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная
-          цветовая гамма сайта помогает привлечь и удержать внимание
-          пользователей, сформировать положительное отношение к продукту,
-          подтолкнуть посетителей к совершению целевых действий, повысить
-          конверсию.
-        </p>
-        <p>
-          Универсального ответа на вопрос, как тот или иной цвет влияет на
-          разных людей, нет. Эмоциональная и поведенческая реакция каждого
-          человека зависит от личного опыта. Вместе с тем можно выделить
-          определенные закономерности влияния цветов на поведение пользователей.
-        </p>
-        <p>
-          В исследовании «Влияние цвета на маркетинг» (Impact of color on
-          marketing) говорится, что использование разных цветов может
-          существенно влиять на настроение и поведение потребителей.
-          Утверждается, что от 60 до 90% покупателей (в зависимости от категории
-          продукта) дают положительную или отрицательную оценку товару,
-          основываясь только на его цвете.
-        </p>
-      </section>
-    </article>
+    <main class="main_page">
+      <div class="hero_container">
+        <article>
+          <div class="time">
+            <span>FRONTEND </span> &bull; <time> 12 мая 2024</time>
+          </div>
+          <h1 class="hero_title">
+            Теория цвета - Как цвет влияет на поведение потребителей
+          </h1>
+          <div class="logo_author">
+            <div class="author">
+              <img src="img.png" alt="Фото автора" width="50px" height="50px" />
+            </div>
+            <div class="name_author">
+              <h2>Наталья Васильева</h2>
+              <p class="profesion">Разработчик</p>
+            </div>
+          </div>
+
+          <section class="hero_text">
+            <div class="img_wrapper">
+              <img
+                src="img2.png"
+                alt="foto_mac"
+                class="img_mac"
+                width="896px"
+                height="594px"
+              />
+            </div>
+            <div class="text_wrapper">
+              <p class="text_1">
+                Теория цвета — это особенности эмоционального восприятия
+                человеком тех или иных цветовых решений. Цвета и различные их
+                комбинации влияют на психику человека, а значит, во многом
+                определяют его поведение. Маркетологи и веб-дизайнеры хорошо
+                знают, что правильно подобранная цветовая гамма сайта помогает
+                привлечь и удержать внимание пользователей, сформировать
+                положительное отношение к продукту, подтолкнуть посетителей к
+                совершению целевых действий, повысить конверсию.
+              </p>
+              <p class="text_2">
+                Универсального ответа на вопрос, как тот или иной цвет влияет на
+                разных людей, нет. Эмоциональная и поведенческая реакция каждого
+                человека зависит от личного опыта. Вместе с тем можно выделить
+                определенные закономерности влияния цветов на поведение
+                пользователей.
+              </p>
+              <p class="text_3">
+                В исследовании «Влияние цвета на маркетинг» (Impact of color on
+                marketing) говорится, что использование разных цветов может
+                существенно влиять на настроение и поведение потребителей.
+                Утверждается, что от 60 до 90% покупателей (в зависимости от
+                категории продукта) дают положительную или отрицательную оценку
+                товару, основываясь только на его цвете.
+              </p>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
     <footer>
       <p>Все права защищены &copy; 2024</p>
     </footer>
